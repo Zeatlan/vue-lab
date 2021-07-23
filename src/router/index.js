@@ -9,6 +9,7 @@ import Jobs from '../views/jobs/Jobs.vue'
 import JobDetails from '../views/jobs/JobDetails.vue'
 
 import Blog from '../views/Blog/Blog.vue'
+import Details from '../views/Blog/Details.vue'
 
 import NotFound from '../views/NotFound.vue'
 
@@ -37,6 +38,12 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     component: Blog
+  },
+  {
+    path: '/posts/:id',
+    name: 'Details',
+    component: Details,
+    props: true
   },
   {
     path: '/jobs/:id',

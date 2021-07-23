@@ -15,5 +15,27 @@
             "id": 3,
             "details": "lorem"
         }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "title": "Welcome to the blog",
+            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cupiditate eligendi expedita earum est corporis necessitatibus corrupti perspiciatis odio eos quo nostrum, aliquam aperiam nesciunt consequuntur tempora numquam modi in. Necessitatibus quasi voluptatum est ipsam modi illum fugiat, odit, minima earum dolor atque explicabo unde voluptatem deleniti, laudantium cupiditate? Aliquam aut magni, libero dolorem, accusamus quos illo reiciendis adipisci excepturi tempora inventore perferendis optio voluptas laborum! Veniam dolorem deleniti sapiente, consequatur velit, labore dignissimos sit voluptates voluptatibus illo eius quaerat et adipisci magni neque. Molestiae excepturi quas sed cum vero exercitationem! Iste velit animi odio numquam nihil sapiente quibusdam quasi.",
+            "tags": [
+                "webdev",
+                "coding",
+                "news"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Top 5 CSS tips",
+            "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, cum tenetur placeat minus facilis corrupti culpa dignissimos maxime pariatur repellendus eveniet hic voluptate incidunt, aliquam labore sapiente cupiditate maiores nam natus perferendis temporibus ipsa corporis optio. Minus tempore aliquam commodi assumenda, distinctio ipsam. Fugit inventore ut quo nemo earum mollitia perferendis quibusdam totam hic, molestias molestiae temporibus expedita soluta blanditiis porro accusamus. Distinctio voluptates enim commodi cumque deleniti perferendis officiis totam explicabo sunt numquam. Molestias asperiores qui magnam fugiat amet magni vero quasi perferendis temporibus explicabo harum optio culpa totam, eligendi nam aspernatur quisquam illum facilis repellat debitis quaerat omnis.",
+            "tags": [
+                "css",
+                "webdev",
+                "coding"
+            ]
+        }
     ]
 }
