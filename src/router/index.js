@@ -1,9 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+
 import Reaction from '../views/ReactionTimerGame/Reaction.vue'
+
+import Form from '../views/Form/Form.vue'
+
 import Jobs from '../views/jobs/Jobs.vue'
 import JobDetails from '../views/jobs/JobDetails.vue'
-import Form from '../views/Form/Form.vue'
+
+import Blog from '../views/Blog/Blog.vue'
+
 import NotFound from '../views/NotFound.vue'
 
 const routes = [
@@ -26,6 +32,11 @@ const routes = [
     path: '/jobs',
     name: 'Jobs',
     component: Jobs
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog
   },
   {
     path: '/jobs/:id',
