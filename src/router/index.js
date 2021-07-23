@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Reaction from '../views/ReactionTimerGame/Reaction.vue'
 import Jobs from '../views/jobs/Jobs.vue'
 import JobDetails from '../views/jobs/JobDetails.vue'
+import Form from '../views/Form/Form.vue'
 import NotFound from '../views/NotFound.vue'
 
 const routes = [
@@ -15,6 +16,11 @@ const routes = [
     path: '/reaction',
     name: 'Reaction',
     component: Reaction
+  },
+  {
+    path: '/form',
+    name: 'Form',
+    component: Form
   },
   {
     path: '/jobs',
