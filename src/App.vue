@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link :to="{ name: 'Home' }">Home</router-link>
-    <router-link :to="{ name: 'About' }">About</router-link>
+    <router-link :to="{ name: 'Reaction' }">Reaction Timer Game</router-link>
     <router-link :to="{ name: 'Jobs' }">Jobs</router-link>
   </div>
 
@@ -39,11 +39,12 @@ export default {
 
 #nav {
   padding: 30px;
-  width: 360px;
+  width: 860px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -53,12 +54,13 @@ export default {
   text-decoration: none;
   margin-left: 15px;
   padding: 15px;
+  background: rgb(240, 239, 239);
+  border-radius: 5px;
 }
 
 #nav a.router-link-exact-active {
   color: #fff;
   background-color: #ab42b9;
-  border-radius: 5px;
 }
 
 button {
