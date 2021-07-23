@@ -2,8 +2,8 @@
   <div class="home">
     <h1>Vue Lab</h1>
     <p>
-      Tous mes tests sont réalisés sur cette interface, ces tests ont pour seul
-      but d'apprendre.
+      All my tests are realised on this interface, these tests are just for
+      learning.
     </p>
 
     <p>Zeatlan</p>
