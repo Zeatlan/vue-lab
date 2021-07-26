@@ -5,6 +5,8 @@ import Reaction from '../views/ReactionTimerGame/Reaction.vue'
 
 import Form from '../views/Form/Form.vue'
 
+import Todos from '../views/Todolist/Todos.vue'
+
 import Jobs from '../views/jobs/Jobs.vue'
 import JobDetails from '../views/jobs/JobDetails.vue'
 
@@ -28,6 +30,11 @@ const routes = [
     path: '/form',
     name: 'Form',
     component: Form
+  },
+  {
+    path: '/todolist',
+    name: 'Todos',
+    component: Todos
   },
   {
     path: '/jobs',

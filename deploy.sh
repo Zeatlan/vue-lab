@@ -11,4 +11,4 @@ git add -A
 git commit -m "New deployment"
 git push -f git@github.com:Zeatlan/vue-lab.git main:gh-pages
 
-cd -
+cd - 

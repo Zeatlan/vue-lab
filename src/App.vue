@@ -3,6 +3,7 @@
     <router-link :to="{ name: 'Home' }">Home</router-link>
     <router-link :to="{ name: 'Reaction' }">Reaction Timer Game</router-link>
     <router-link :to="{ name: 'Form' }">Formulaire</router-link>
+    <router-link :to="{ name: 'Todos' }">Todo-list</router-link>
     <router-link :to="{ name: 'Jobs' }">Jobs</router-link>
     <router-link :to="{ name: 'Blog' }">Blog</router-link>
   </div>
