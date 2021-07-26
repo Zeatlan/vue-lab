@@ -1,5 +1,18 @@
 <template>
   <div class="home">
+    <transition
+      name="fade"
+      appear
+      @before-enter="beforeEnter"
+      @enter="enter"
+      @after-enter="afterEnter"
+      @before-leave="beforeLeave"
+      @leave="leave"
+      @after-leave="after"
+    >
+      <h1 v-if="showTitle">Todolist</h1>
+    </transition>
+
     <transition name="toast">
       <Toast v-if="showToast" />
     </transition>
@@ -16,13 +29,47 @@ export default {
   components: { Toast, Todos },
   setup() {
     const showToast = ref(false);
+    const showTitle = ref(true);
 
     const triggerToast = () => {
       showToast.value = true;
       setTimeout(() => (showToast.value = false), 3000);
     };
 
-    return { showToast, triggerToast };
+    // TRANSITIONING
+    const beforeEnter = (el) => {
+      console.log(el);
+    };
+    const enter = (el) => {
+      console.log(el);
+    };
+    const afterEnter = (el) => {
+      el.style.color = "green";
+      setTimeout(() => (showTitle.value = false), 2000);
+    };
+    const beforeLeave = (el) => {
+      el.style.color = "pink";
+      console.log(el);
+    };
+    const leave = (el) => {
+      console.log(el);
+    };
+    const afterLeave = (el) => {
+      console.log(el);
+      setTimeout(() => (showTitle.value = true), 2000);
+    };
+
+    return {
+      showToast,
+      showTitle,
+      triggerToast,
+      beforeEnter,
+      enter,
+      afterEnter,
+      beforeLeave,
+      leave,
+      afterLeave,
+    };
   },
 };
 </script>
@@ -52,6 +99,20 @@ export default {
 }
 .toast-leave-active {
   transition: all 0.3s ease;
+}
+
+/* Transition Javascript Hooks H1 */
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 3s ease;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-leave-active {
+  transition: opacity 3s ease;
 }
 
 @keyframes wobble {
